@@ -1,0 +1,19 @@
+New York,0
+New York,3
+New York,2
+New York,-1
+New York,-4
+New York,4
+New York,1
+California,4
+California,2
+California,-3
+California,1
+California,4
+California,2
+Meryland,3
+Meryland,-2
+Meryland,-4
+Meryland,-1
+Meryland,0
+Meryland,-3
