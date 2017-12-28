@@ -4,6 +4,7 @@ New York,2
 New York,-1
 New York,-4
 New York,4
+California,2
 New York,1
 California,4
 California,2
