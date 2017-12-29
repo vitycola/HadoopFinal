@@ -6,20 +6,15 @@ init_state = 'null'
 init_count = 0
 init_score = 0
 
-#with open('./prueba_mapper.txt') as data:
-
-    #for line in data:
 for line in sys.stdin:
 
         #try:
-
         state, score = line.split(',')
         state = str(state)
         score = int(score)
 
 
         if state == init_state:
-            #print('inicial', state, score)
             init_score = init_score + score
             init_count = init_count + 1
 

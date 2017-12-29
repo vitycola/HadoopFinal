@@ -2,11 +2,8 @@
 import json
 import sys
 
-
-
-#with open('./datos/sample.txt') as data:
 for line in sys.stdin:
-#    for line in data:
+
     try:
         tweets = json.loads(line) #Por cada fila cargo un JSON
     except: pass
@@ -17,7 +14,7 @@ for line in sys.stdin:
             words = tweets['text'].split() #Separo en palabras
             cityTweet = tweets['place']['name'] # me quedo con el nombre de la ciudad
 
-            data2 = open("./files/city.csv") #Cargo el diccionario de ciudades y estados
+            data2 = open("city.csv") #Cargo el diccionario de ciudades y estados
             for cities in data2:
                 city, states = cities.split(",")
                 city = str(city)
@@ -33,7 +30,7 @@ for line in sys.stdin:
 
             for word in words: # por cada palabra del tweet
 
-                file = open("./files/AFINN-111.txt")
+                file = open("AFINN-111.txt")
                 for line2 in file: # reviso si la palabra esta en el diccionario
                     term, score = line2.split("\t")
                     term = str(term)
